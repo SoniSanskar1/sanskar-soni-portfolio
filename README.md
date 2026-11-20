@@ -33,4 +33,14 @@ See `../research/PROJECT_RESEARCH.md` for provenance and limitations. CloudBoard
 
 Animation honors reduced-motion preferences and can be paused manually. The native dialog supports Escape and returns focus to the triggering button. Resume downloads, email, LinkedIn and GitHub links are direct links.
 
-The Site manifest is `.openai/hosting.json`; publication uses the static `dist` directory. The initial hosted Site is owner-private.
+## GitHub and Vercel
+
+Source repository: https://github.com/SoniSanskar1/sanskar-soni-portfolio (private).
+
+Vercel serves the static `dist` directory with no framework or build step, using `vercel.json`. The production branch is `main`. Local Vercel identity is stored in ignored `.vercel/` state.
+
+```powershell
+npx vercel --prod
+```
+
+The original owner-private Sites preview is also retained. Its manifest is `.openai/hosting.json`.
