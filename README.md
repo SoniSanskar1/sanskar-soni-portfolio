@@ -37,7 +37,11 @@ Animation honors reduced-motion preferences and can be paused manually. The nati
 
 Source repository: https://github.com/SoniSanskar1/sanskar-soni-portfolio (private).
 
-Vercel serves the static `dist` directory with no framework or build step, using `vercel.json`. The production branch is `main`. Local Vercel identity is stored in ignored `.vercel/` state.
+Live portfolio: https://sanskar-soni-portfolio-eight.vercel.app/
+
+Vercel serves the static `dist` directory with no framework or build step, using `vercel.json`. Source is on `main`. Local Vercel identity is stored in ignored `.vercel/` state.
+
+The first deployment was published directly using the logged-in CLI. Automatic GitHub deployment is not connected: Vercel could not access the new private repository. Grant the Vercel GitHub integration access to this repository before running `npx vercel git connect https://github.com/SoniSanskar1/sanskar-soni-portfolio.git --yes`.
 
 ```powershell
 npx vercel --prod
